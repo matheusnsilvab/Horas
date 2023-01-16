@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333;
+}
+
+.clock {
+    height: 20vh;
+    color: #fff;
+    font-size: 22vh;
+    line-height: 20.4vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
