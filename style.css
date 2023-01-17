@@ -63,4 +63,30 @@ body {
     to {
       transform: translateY(-20vh);
     }
-}  
+}
+
+@media (max-width: 800px) {
+.clock {
+    height: 22vh;
+    color: #fff;
+    font-size: 50pt;
+    line-height: 18vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.clock::before, .clock::after {
+    content: '';
+    width: 70ch;
+    height: 9vh;
+    background: linear-gradient(to top, transparent, #000);
+    position: absolute;
+    z-index: 2;
+}
+
+.clock::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, black);
+}
+}
